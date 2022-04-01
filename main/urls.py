@@ -11,4 +11,5 @@ urlpatterns = [
     path('verify/<auth_token>', verify, name="verify"),
     path('error', error_page, name="error"),
     path('home', home, name="home"),
+    path('posts/<int:post_id>', postview, name="postview"),
 ]

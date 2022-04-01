@@ -134,7 +134,12 @@ def error_page(request):
 
 
 
-
+def postview(request , post_id):
+    post = posts.objects.filter(id = post_id)
+       
+    return render(request , 'main/postview.html' , {'post':post[0]})
+    
+    
 
 
 def send_mail_after_registration(email , token):
