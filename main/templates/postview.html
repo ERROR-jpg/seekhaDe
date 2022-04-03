@@ -1,13 +1,96 @@
-
 {% extends "base.html"%}
 
 {% block css %}
+.iframe{
+    border-top-width: 10px;
+    border-left-width:10px;
+    border-right-width: 10px;
+}
 
+.container{
+    text-align: center;
+    margin-top: 10px;
+}
+.h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.container1{
+    margin-left: 20%;
+    margin-right: 15%;
+    font-size: 1.2rem;
+}
+.container2{
+margin-left: 20%;
+margin-right: 15%;
+font-size: 1.3rem;
+}
 {% endblock %}
 
 {% block content %}
-
-
+<div class="container"  name="title" font-size="3rem"><h1><b>{{post.title}}</b></h1>
+<iframe src="{{post.link}}" width="1000" height="500" frameborder="1"></iframe>
+</div>
+<br>
+<br>
+<div class="container1">
+    <h>{{post.desc}}</h>
+    <br>
+</div>
+<div class="container2">
+    <br>
+    <b>{{post.step_title}}</b>
+    <br>
+    {{post.step}}
+<br>
+<br>
+    <b>{{post.step_title1}}</b>
+    <br>
+    {{post.step1}}
+<br>
+<br>
+    <b>{{post.step_title2}}</b>
+    <br>
+    {{post.step2}}
+<br>
+<br>
+    <b>{{post.step_title3}}</b>
+    <br>
+    {{post.step3}}
+<br>
+<br>
+    <b>{{post.step_title4}}</b>
+    <br>
+    {{post.step4}}
+<br>
+<br>
+    <b>{{post.step_title5}}</b>
+    <br>
+    {{post.step5}}
+<br>
+<br>
+    <b>{{post.step_title6}}</b>
+    <br>
+    {{post.step6}}
+<br>
+<br>
+    <b>{{post.step_title7}}</b>
+    <br>
+    {{post.step7}}
+<br>
+<br>
+    <b>{{post.step_title8}}</b>
+    <br>
+    {{post.step8}}
+<br>
+<br>
+    <b>{{post.step_title9}}</b>
+    <br>
+    {{post.step9}}
+    <br>
+    <br>
+</div>
 
 
 {% endblock %}
